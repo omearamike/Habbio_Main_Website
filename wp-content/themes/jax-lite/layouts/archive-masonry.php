@@ -1,17 +1,20 @@
-<div class="container masonry-container">
+<div class="testDiv">
+		<h1>Div box </h1>
+</div>
 
-	<?php 
-	
-		do_action('jaxlite_masonry'); 
+<div class="container masonry-container">
+	<?php
+
+		do_action('jaxlite_masonry');
 
 		if ( jaxlite_setting('jaxlite_infinitescroll_system') == "on" ) :
-			
-			do_action('jaxlite_infinitescroll_masonry_script'); 
-					
+
+			do_action('jaxlite_infinitescroll_masonry_script');
+
 		endif;
-			
-		do_action( 'jaxlite_pagination', 'archive'); 
-	
+
+		do_action( 'jaxlite_pagination', 'archive');
+
 	?>
 
 </div>
