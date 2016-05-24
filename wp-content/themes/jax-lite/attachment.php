@@ -1,6 +1,6 @@
 <?php
 
-	get_header();
+	// get_header();
 	do_action('jaxlite_header_sidebar', 'header-sidebar-area');
 
 ?>
@@ -30,7 +30,6 @@
 					?>
 
                         <a rel="prettyPhoto"  href="<?php echo wp_get_attachment_url($post->id); ?>" title="<?php the_title(); ?>"><img src="<?php echo $att_image[0];?>" width="<?php echo $att_image[1];?>" height="<?php echo $att_image[2];?>"  class="attachment-medium" alt="<?php $post->post_excerpt; ?>" /></a>
-                    <h2>"Test to check if titile of post is printing" </h2>
 					<?php else: ?>
 
                         <a href="<?php echo wp_get_attachment_url($post->id); ?>" title="<?php the_title(); ?>"> <?php the_title(); ?>  </a>

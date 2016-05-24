@@ -1,7 +1,3 @@
-<div class="testDiv">
-		<h1>Div box </h1>
-</div>
-
 <div class="container masonry-container">
 	<?php
 
