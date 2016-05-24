@@ -28,10 +28,31 @@
 
         <div id="overlay-body"></div>
 
-        <header id="header">
+        <header id="header" class="header">
+          <!-- Removed the text logo in header -->
+          <!-- <?php do_action( "jaxlite_" . jaxlite_get_header_layout()); ?> -->
+            <div class="HeaderBox">
 
-            <?php do_action( "jaxlite_" . jaxlite_get_header_layout()); ?>
+              <!-- Start of navigation bar -->
+              <div id="navbar" class="navbar">
+                <div class="navigation"><i class="fa fa-bars hamburg"></i> </div>
+                <div class="logo">
+                  <img style="max-width:100px; margin-top: -7px;" src= <?php get_header_image(); ?>>
+                </div>
+              </div>
+              <!-- end -->
 
-            <div class="navigation"><i class="fa fa-bars"></i> </div>
-              <div class="headerTag"><h1>This should be in the header</h1></div>
+              <!-- Start of header content -->
+              <div class="headerContent">
+
+                <div class="headerTag"><h1>Start conquring your habits today with Habi</h1></div>
+                <div class="headerBackground"></div>
+                <div class="downloadButton"></div>
+              </div>
+              <!-- end -->
+            </div>
+
+
+
+
         </header>

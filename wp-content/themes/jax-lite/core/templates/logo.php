@@ -14,7 +14,7 @@ if (!function_exists('jaxlite_logo_function')) {
 	//EDIT Removed the default text logos
 	function jaxlite_logo_function( $class = "class=''" ) { ?>
 
-        <!-- <div id="logo" <?php echo $class;?>>
+        <div id="logo" <?php echo $class;?>>
 
             <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name') ?>">
 
@@ -35,7 +35,7 @@ if (!function_exists('jaxlite_logo_function')) {
 
             </a>
 
-        </div> -->
+        </div>
 
 <?php
 
