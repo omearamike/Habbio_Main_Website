@@ -28,9 +28,9 @@
             <div class="row">
 
                 <article <?php post_class(); ?> >
-
+                	<h1>Hello!</h1>
                     <?php
-										
+
 						while ( have_posts() ) : the_post();
 
 							do_action('jaxlite_postformat');

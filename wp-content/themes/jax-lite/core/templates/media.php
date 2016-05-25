@@ -25,8 +25,6 @@ if (!function_exists('jaxlite_thumbnail_function')) {
 
 				<div class="pin-container">
 					<?php the_post_thumbnail($id); ?>
-					<?php the_post_thumbnail($id); ?>
-					<!-- <span class="titleOverlay">	<h2><?php the_title();?></h2> </span> -->
 				</div>
 
 			<?php }
@@ -38,13 +36,13 @@ if (!function_exists('jaxlite_thumbnail_function')) {
 			if (!empty($thumb)) :
 
 		?>
-
+		
 			<div class="pin-container">
+
 					<!-- Custom text overlay for influencers -->
 					<span class="titleOverlay">	<h2> <?php the_title();?> </h2> </span>
 
                 <div class="overlay-image blog-thumb">
-
 
                     <img src="<?php echo $thumb[0]; ?>" class="attachment-blog wp-post-image" alt="post image" title="post image">
                     <a href="<?php echo get_permalink($post->ID); ?>" class="overlay link"></a>

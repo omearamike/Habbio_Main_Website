@@ -28,31 +28,19 @@
 
         <div id="overlay-body"></div>
 
-        <header id="header" class="header">
-          <!-- Removed the text logo in header -->
-          <!-- <?php do_action( "jaxlite_" . jaxlite_get_header_layout()); ?> -->
-            <div class="HeaderBox">
+        <header id="header">
 
-              <!-- Start of navigation bar -->
-              <div id="navbar" class="navbar">
-                <div class="navigation"><i class="fa fa-bars hamburg"></i> </div>
-                <div class="logo">
-                  <img style="max-width:100px; margin-top: -7px;" src= <?php get_header_image(); ?>>
-                </div>
-              </div>
-              <!-- end -->
+            <!-- EDIT Removed the default text on Jumbo image -->
+            <!-- <?php do_action( "jaxlite_" . jaxlite_get_header_layout()); ?> -->
+            <!-- <a class="jumboLogo" src="wp-content/uploads/2016/05/logo.png" /> -->
+            <a class="jumboLogo" href="http://www.habi.io"> <img border="0" alt="Habi" src="<?php echo get_site_url(); ?>/wp-content/uploads/2016/05/logo.png"/>
+              
+            <h1 class="headline">Start conquring your habits today with Habi</h1>
 
-              <!-- Start of header content -->
-              <div class="headerContent">
-
-                <div class="headerTag"><h1>Start conquring your habits today with Habi</h1></div>
-                <div class="headerBackground"></div>
-                <div class="downloadButton"></div>
-              </div>
-              <!-- end -->
+            <div class="cta">
+              <a href="#" class="downloadBtn">Get Habi Now</a>
             </div>
 
-
-
+            <div class="navigation"><i class="fa fa-bars"></i> </div>
 
         </header>

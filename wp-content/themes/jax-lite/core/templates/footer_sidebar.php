@@ -2,7 +2,7 @@
 
 /**
  * Wp in Progress
- * 
+ *
  * @package Jax Lite
  * @author WPinProgress
  *
@@ -13,42 +13,44 @@
 if (!function_exists('jaxlite_footer_sidebar_function')) {
 
 	function jaxlite_footer_sidebar_function() {
-		
+
 		$sidebarname   = "footer-sidebar-area";
 		$sidebar_check = true;
-		
+
 		if ( ( jaxlite_is_single() ) && ( jaxlite_postmeta('jaxlite_footer_sidebar') == "none" ) ) {
-			
+
 			$sidebar_check = false ;
-			
+
 		}
-	
-		if ( ( is_active_sidebar($sidebarname) ) && ( $sidebar_check == true ) ) : 
-	
+
+		if ( ( is_active_sidebar($sidebarname) ) && ( $sidebar_check == true ) ) :
+
 ?>
 
         <footer id="footer">
-            
+
             <div class="container">
-    
+
     			<section class="row widgets">
-							
+
 					<?php dynamic_sidebar($sidebarname) ?>
-							
+
                 </section>
-    
+
             </div>
-            
+
         </footer>
-    
-<?php 
-	
-		endif; 
-		
+
+<?php
+
+		endif;
+
 	}
-	
+
 	add_action( 'jaxlite_footer_sidebar','jaxlite_footer_sidebar_function', 10, 2 );
 
 }
 
 ?>
+
+<div class="CatagoryList"><?php echo get_the_category_list() ?> </div>

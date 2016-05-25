@@ -2,7 +2,7 @@
 
 /**
  * Wp in Progress
- *
+ * 
  * @package Jax Lite
  * @author WPinProgress
  *
@@ -11,38 +11,38 @@
  */
 
 if (!function_exists('jaxlite_logo_function')) {
-	//EDIT Removed the default text logos
+
 	function jaxlite_logo_function( $class = "class=''" ) { ?>
-
+		
         <div id="logo" <?php echo $class;?>>
-
+        
             <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name') ?>">
-
-                <?php
-
+                                                    
+                <?php 
+                                    
                     if ( jaxlite_setting('jaxlite_custom_logo') ) {
-
-                        echo "<img src='".jaxlite_setting('jaxlite_custom_logo')."' alt='logo'>";
-
+    
+                        echo "<img src='".jaxlite_setting('jaxlite_custom_logo')."' alt='logo'>"; 
+    
                     } else {
-
+                                    
                         echo "<span class='sitename'>" .get_bloginfo('name') . "</span>";
                         echo "<span class='sitedescription'>". get_bloginfo('description')."</span>";
-
+                                        
                     }
-
+                                    
                 ?>
-
+                                                        
             </a>
-
+        
         </div>
-
+                                    
 <?php
-
+				
 	}
-
+	
 	add_action( 'jaxlite_logo','jaxlite_logo_function', 10, 2 );
-
+	
 }
 
 ?>

@@ -229,7 +229,7 @@ if ( $allowed_files ) :
 
 			echo "\t<ul>\n";
 		}
-		
+
 		$file_description = get_file_description( $filename );
 		if ( $filename !== basename( $absolute_filename ) || $file_description !== $filename ) {
 			$file_description .= '<br /><span class="nonessential">(' . $filename . ')</span>';

@@ -1,5 +1,5 @@
 <div class="container">
-			<h1>This is the masonry container </h1>
+
     <div class="row" id="blog" >
 
 	<?php if ( ( jaxlite_template('sidebar') == "left-sidebar" ) || ( jaxlite_template('sidebar') == "right-sidebar" ) ) : ?>
@@ -131,3 +131,5 @@
 	?>
 
 </div>
+
+ <div class="CatagoryList"><?php echo get_the_category_list() ?> </div>

@@ -142,7 +142,7 @@ img {
 
 @media (min-width: 1200px) {
     .container {
-        width: 1200px
+        width: 940px
     }
 }
 
@@ -266,7 +266,7 @@ a.btn {
 #header {
 	position:relative;
 	text-align:center;
-	padding:200px;
+	padding:200px 50px;
 	margin-bottom:50px;
 	color:#fff ;
 	width:100%;
@@ -663,8 +663,9 @@ body.logged-in.customizer_active.overlay-active #sidebar-wrapper #scroll-sidebar
 	right:0;
 }
 
+/*EDIT Changed color of nav hamburg*/
 #header .navigation i {
-	color:#fff;
+	color:black;
 }
 
 #header .navigation i:hover {

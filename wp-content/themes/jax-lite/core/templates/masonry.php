@@ -1,3 +1,5 @@
+
+
 <?php
 
 /**
@@ -14,8 +16,8 @@ if (!function_exists('jaxlite_masonry_function')) {
 
 	function jaxlite_masonry_function() { ?>
 
+		<!-- EDIT Increased size of pictures  -->
 		<div class="row" id="masonry">
-
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                 <article <?php post_class(); ?>>
