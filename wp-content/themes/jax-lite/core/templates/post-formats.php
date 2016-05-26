@@ -2,7 +2,7 @@
 
 /**
  * Wp in Progress
- * 
+ *
  * @package Jax Lite
  * @author WPinProgress
  *
@@ -13,29 +13,36 @@
 if (!function_exists('jaxlite_postformat_function')) {
 
 	function jaxlite_postformat_function() {
-		
+
 		if ( get_post_type( get_the_ID()) == "page" ) {
-			
+
 			$postformats = "page";
-		
-		} 
+
+		}
 
 		else if ( get_post_format() == "image" ) {
-		
+
 			$postformats = "image";
-		
+
+		}
+
+		// Added new profile Post format
+		else if ( get_post_format() == "profile" ) {
+
+			$postformats = "profile";
+
 		}
 
 		else {
-		
+
 			$postformats = "standard";
-		
+
 		}
-						
+
 		get_template_part( 'core/post-formats/'.$postformats.'-format' );
-	
+
 	}
-	
+
 	add_action( 'jaxlite_postformat','jaxlite_postformat_function', 10, 2 );
 
 }

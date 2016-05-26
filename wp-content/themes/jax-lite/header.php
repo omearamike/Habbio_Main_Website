@@ -7,6 +7,8 @@
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes" />
 
 <!--[if IE 8]>
@@ -34,7 +36,7 @@
             <!-- <?php do_action( "jaxlite_" . jaxlite_get_header_layout()); ?> -->
             <!-- <a class="jumboLogo" src="wp-content/uploads/2016/05/logo.png" /> -->
             <a class="jumboLogo" href="http://www.habi.io"> <img border="0" alt="Habi" src="<?php echo get_site_url(); ?>/wp-content/uploads/2016/05/logo.png"/>
-              
+
             <h1 class="headline">Start conquring your habits today with Habi</h1>
 
             <div class="cta">

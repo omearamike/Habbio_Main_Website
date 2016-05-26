@@ -39,6 +39,8 @@ if (!function_exists('jaxlite_footer_sidebar_function')) {
 
             </div>
 
+						<h1> This is the footer </h1>
+
         </footer>
 
 <?php
@@ -52,5 +54,3 @@ if (!function_exists('jaxlite_footer_sidebar_function')) {
 }
 
 ?>
-
-<div class="CatagoryList"><?php echo get_the_category_list() ?> </div>

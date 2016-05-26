@@ -1,3 +1,5 @@
+<!-- Default Post template -->
+
 <?php
 
 	/**

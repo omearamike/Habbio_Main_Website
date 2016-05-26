@@ -902,6 +902,7 @@ if (!function_exists('jaxlite_setup')) {
 		if ( ! isset( $content_width ) )
 			$content_width = jaxlite_get_width();
 
+			// EDIT added profile post format
 		add_theme_support( 'post-formats', array( 'aside','gallery','quote','video','audio','link','status','chat','image' ) );
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'post-thumbnails' );
