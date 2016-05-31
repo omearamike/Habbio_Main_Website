@@ -1,0 +1,534 @@
+/* ===============================================
+    Custom Font
+   =============================================== */
+
+
+    @font-face {
+        font-family: nexa-Bold;
+        src: url('../fonts/Nexa_Bold.otf') format("opentype");
+      }
+
+    @font-face {
+        font-family: nexa-Light;
+        src: url('../fonts/Nexa_Light.otf') format("opentype");
+      }
+
+/* ===============================================
+    Header
+   =============================================== */
+
+   #header {
+     margin-bottom: 0px;
+   }
+
+/* ===============================================
+    Jumbo header
+   =============================================== */
+
+  .downloadBtn {
+     position: absolute;
+     width: 220px;
+     z-index: 10;
+     margin-top: 0px;
+     border-radius: 5px;
+     background-color: #fcb450; /* Orange */
+     color: white;
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+   }
+
+   .headline {
+     color: #343434;
+   }
+
+   .jumboLogo {
+   }
+
+   /* ===============================================
+        Slide Menu
+      =============================================== */
+
+      .downloadBtnMenu {
+         position: absolute;
+         width: 70%;
+         z-index: 10;
+         margin-top: 0px;
+         border-radius: 5px;
+         background-color: #fcb450; /* Orange */
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         /*align-items: center;*/
+       }
+
+       .ctaMenu {
+       }
+
+
+
+
+
+   /* ===============================================
+        Masonary Module
+      =============================================== */
+
+  /*Removes padding from all the catagory pictures*/
+  .masonry-element {
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-box-shadow: 12px 29px 65px 10px rgba(0,0,0,0.20);
+    -moz-box-shadow: 12px 29px 65px 10px rgba(0,0,0,0.20);
+    box-shadow: 12px 29px 65px 10px rgba(0,0,0,0.20);
+
+  }
+
+  /* ===============================================
+       Background of website
+     =============================================== */
+  #wrapper {
+    background-color: white;
+  }
+
+
+  /* ===============================================
+       Text overlay for each influencer
+     =============================================== */
+
+  /*text overlay style*/
+.titleOverlay h2 {
+    position: absolute;
+    /*top: 200px;*/
+    left: 0;
+    width: 70%;
+    z-index: 100;
+    bottom: 0px;
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3px 0px 3px 15px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+
+/* ===============================================
+     Profile for Influencer
+   =============================================== */
+   .profileImg {
+
+     width: 50%;
+     /*float: left;*/
+     display: inline-block;
+
+   }
+   .profileImg img {
+     width: 100%;
+     height: auto;
+   }
+
+   .profileHeader {
+     background-color: rgba(222, 221, 213, 0.15);
+     box-shadow: 0 0 4px rgba(0,0,0,0.15);
+   }
+
+   /* ===============================================
+        Habit Section
+      =============================================== */
+
+    .habitSection {
+        width: auto;
+        /*height:100vh;*/
+        /*background-color: rgba(232, 231, 223, .11);*/
+        background-color: #fdfcfc;
+      }
+
+
+  .habitBox {
+    /*background-color: green;*/
+    /*padding: 10px;*/
+    /*margin: 10px;*/
+    height: 100%;
+    /*border: #ebebeb solid 20px;*/
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    margin: 0 auto;
+    background-color: rgba(169, 164, 153, 0.25);
+  }
+
+  .habitBox h2 {
+    margin: 0px 0 0px 0;
+  }
+
+   .eveningBox {
+     background-color: white;
+     height: auto;
+     width: 100%;
+     /*border: grey 1px solid;*/
+     float: left;
+}
+
+  .morningBox {
+    /*sbackground-color: #ca1717;*/
+    height: 100vh;
+    width: 100%;
+    /*float: left;*/
+}
+
+  .afternoonBox {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    float: left;
+  }
+
+.morningTitleBox {
+  width: 100%;
+  float: left;
+  /*height: 100%;*/
+}
+
+.morningTitleBox h2 {
+  text-align: center;
+  font-family: Helvetica;
+  /*font-family: nexa-Bold;*/
+  vertical-align: middle;
+  /*padding-top: 25%;*/
+  /*margin-top: 25%;*/
+  font-size: 40px;
+  /*transform: translateX(25%) translateY(50%);*/
+  line-height: 90px;
+  vertical-align: middle;
+}
+
+.eveningTitleBox {
+  width: 100%;
+  float: right;
+  /*padding-top: 25%;*/
+  font-size: 40px;
+  /*transform: translateX(-50%) translateY(-50%);*/
+}
+.cardTitle {
+  width: 100%;
+  position: inherit;
+  border-bottom: 2px solid #AFAFAF;
+}
+
+.cardTitle h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.leftContent {
+  /*background-color: green;*/
+  height: 100%;
+  width: 50%;
+  clear: both;
+  position: static;
+  display: inline-block;
+  /* margin: 10px; */
+  float: left;
+  z-index: 1011;
+  bottom: 0px;
+  padding: 20px;
+  border-right: 2px solid #AFAFAF;
+}
+
+.rightContent {
+  /*background-color: red;*/
+  height: 100%;
+  width: 50%;
+  clear: both;
+  position: static;
+  display: inline-block;
+  bottom: 0px;
+padding: 20px;
+
+
+}
+
+.habitCard {
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  clear: both;
+  display: inline-block;
+  /*box-shadow: 0 0 4px rgba(0,0,0,0.15);*/
+}
+
+.innerCard {
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 4px rgba(0,0,0,0.15);
+      padding: 20px;
+      background-color: rgb(250, 250, 249);
+}
+
+.innerContainer {
+  /*position: fixed;
+  bottom: 0px;*/
+  /*background-color: blue;*/
+padding: inherit;
+}
+
+.eveningTitleBox h2 {
+  text-align: center;
+  font-family: nexa-Bold;
+  vertical-align: middle;
+  /*padding-top: 25%;*/
+  /*margin-top: 25%;*/
+  font-size: 40px;
+  /*transform: translateX(25%) translateY(50%);*/
+  line-height: 90px;
+  vertical-align: middle;
+}
+
+.afternoonTitleBox {
+  width: 100%;
+  float: right;
+  /*padding-top: 25%;*/
+  font-size: 40px;
+  /*transform: translateX(-50%) translateY(-50%);*/
+}
+
+.afternoonTitleBox h2 {
+  text-align: center;
+  font-family: nexa-Bold;
+  vertical-align: middle;
+  /*padding-top: 25%;*/
+  /*margin-top: 25%;*/
+  font-size: 40px;
+  /*transform: translateX(25%) translateY(50%);*/
+  line-height: 90px;
+  vertical-align: middle;
+}
+
+.sitePage {
+  width: 100%;
+  /*box-shadow: 0 0 4px rgba(0,0,0,0.15);*/
+  /*background-color: red;*/
+
+
+}
+
+.sitePage h1 {
+  font-size: 3em;
+  padding: 20px 3px 20px 30px;
+}
+
+.descriptionBox {
+  width: 50%;
+  float: right;
+  padding: 50px;
+}
+
+
+.postTitle h1 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: nexa-Bold;
+}
+
+.profileCaption h2 {
+  font-family: nexa-Light;
+}
+
+
+.habitArticle {
+  /*margin: 10%;*/
+  /*background-color: rgba(232, 231, 223, 0.22);*/
+  clear: both;
+  /*display: block;*/
+  position: relative;;
+  /*padding: 0px 10px 10px 10px;*/
+  box-shadow: 0 0 4px rgba(0,0,0,0.15);
+}
+
+.habitHeader {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(107, 107, 106, 0.18);
+}
+
+.habitTitle {
+  padding: 1em 0 20px 0;
+  text-align: center;
+}
+
+.habitArticle h1 {
+
+  font-family: nexa-Bold;
+  font-size: 5em;
+
+}
+
+.habitBlog {
+
+  margin: 4% 20% 4% 20%;
+  padding: 15px 10px 15px 10px;
+  /*background-color: rgba(232, 231, 223, 0.22);*/
+  clear: both;
+  /*display: block;*/
+  position: relative;
+  /*box-shadow: 0 0 1px rgba(0,0,0,0.15);*/
+
+}
+
+.habitContent {
+
+  /*margin: 4% 4% 4% 4%;*/
+  padding: 15px 10px 15px 10px;
+  background-color: #f9f8f6;
+  /*background-color: rgba(232, 231, 223, 0.22);*/
+  clear: both;
+  display: block;
+  position: relative;
+  box-shadow: 0 0 1px rgba(0,0,0,0.15);
+  width: 100%;
+
+}
+
+/*For Youtube videos with in posts */
+.habitContent iframe {
+  display: block;
+  margin: 40px auto 40px auto;
+  height: 350px;
+}
+
+#morningContent {
+  visibility: show;
+}
+
+#eveningContent {
+  visibility: show;
+}
+
+#afternoonContent {
+  visibility: show;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    .postTitle h1 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .profileCaption h2 {
+      font-size: 10px;
+      font-style: normal;
+      margin: 10px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .postTitle h1 {
+      font-size: 12px;
+      font-weight: bold;
+      /*padding: 10px;*/
+      margin: 10px;
+    }
+
+    .profileCaption h2 {
+      font-size: 10px;
+      font-style: normal;
+      margin: 10px;
+    }
+
+    .descriptionBox {
+      padding: 20px;
+    }
+
+}
+
+#wrapper > div.container.content > div > div > article {
+  margin-bottom: 0px;
+}
+
+
+
+
+
+/* ===============================================
+      Main Footer
+   =============================================== */
+
+   .mainFooter {
+     width: 100%;
+     background-color: #5D5D5D;
+     height: 20%;
+     /*opacity: .2;*/
+     box-shadow: 0 0 5px rgba(119, 119, 119, 0.45);
+     /*position: fixed;*/
+     bottom: 0px;
+     clear: both;
+   }
+
+   .mainFooter .footerContent .topFooter {
+     width: 100%;
+     background-color: rgba(97, 97, 97, 0.83);
+     height: 70px;
+     position: relative;
+   }
+
+   /*.mainFooter .footerContent .footerLeft {
+     width: 33.3%;
+     height: 100%;
+     background-color: yellow;
+     z-index: 1011;
+     float: left;
+     display: inline-block;
+   }
+
+   .mainFooter .footerContent .footerCenter {
+     width: 33.3%;
+     height:100%;
+     background-color: blue;
+     z-index: 1011;
+     float: left;
+     display: inline-block;
+   }
+
+   .mainFooter .footerContent .footerRight {
+     width: 33.3%;
+     height:100%;
+     background-color: red;
+     z-index: 1011;
+     float: left;
+     display: inline-block;
+   }*/
+
+   .footerContent .cta {
+     height: 100%;
+   }
+
+   .footerContent {
+     height: 100%;
+   }
+
+   .post-container, #masonry .post-container.col-md-12 {
+     margin-bottom: 0px;
+   }
+
+   .topFooter .downloadBtn {
+     z-index: 101;
+     margin: auto;
+     position: absolute;
+     left:0;
+     right: 0;
+     top: 0;
+     /*bottom: 0;*/
+
+   }
