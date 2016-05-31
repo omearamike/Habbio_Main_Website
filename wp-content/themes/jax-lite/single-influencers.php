@@ -60,29 +60,85 @@
 							<div class="habitCard">
 								<div class="innerCard">
 											<div class="innerContainer">
-								<div class="cardTitle">
-									<h1>Morning Habits - Press ups</h1>
-								</div>
+													<div class="cardTitle">
+														<h1>Morning Habits - Press ups</h1>
+													</div>
 
-								<div class="leftContent">
-									<p>Joe Wicks is an onlin
-Joe's philosophy to health and fin energy and transf </p>
-<li>Eat Porrige</li>
-<li>Press ups</li>
+													<div class="leftContent">
+														<p>Joe Wicks is an onlin Joe's philosophy to health and fin energy and transf </p>
+														<li>Eat Porrige</li>
+														<li>Press ups</li>
+														<p>Joe Wicks is an onlur macronutrients to ensure your body burns fat, increases in energy and transf </p>
+													</div>
 
-<p>Joe Wicks is an onlur macronutrients to ensure your body burns fat, increases in energy and transf </p> 
-								</div>
+													<div class="rightContent">
 
-								<div class="rightContent">
+														<!-- <img src="/Habiio/wp-content/uploads/2016/05/Joe-Wicks-The-Body-Coach-Skipping1200x976-790x500.jpg" alt="Arianna Huffington_Transparent" /> -->
+														<iframe width="560" height="350px" src="https://www.youtube.com/embed/WFkCJjJcYuY" frameborder="0" allowfullscreen></iframe>
+													</div>
+							</div>
+					</div>
+				</div>
+			</div>
 
-									<img src="/Habiio/wp-content/uploads/2016/05/Joe-Wicks-The-Body-Coach-Skipping1200x976-790x500.jpg" alt="Arianna Huffington_Transparent" />
 
-								</div>
+
+			<div class="afternoonBox">
+				<div class="habitCard">
+					<div class="innerCard">
+								<div class="innerContainer">
+										<div class="cardTitle">
+											<h1>Afternooon Habits - Hit Workouts</h1>
+										</div>
+
+										<div class="rightContent">
+											<p>Joe Wicks is an onlin Joe's philosophy to health and fin energy and transf </p>
+											<li>Eat Porrige</li>
+											<li>Press ups</li>
+											<p>Joe Wicks is an onlur macronutrients to ensure your body burns fat, increases in energy and transf </p>
+										</div>
+
+										<div class="leftContent">
+
+											<img src="/Habiio/wp-content/uploads/2016/05/Joe-Wicks-The-Body-Coach-Skipping1200x976-790x500.jpg" alt="Arianna Huffington_Transparent" />
+
+										</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="eveningBox">
+	<div class="habitCard">
+		<div class="innerCard">
+					<div class="innerContainer">
+							<div class="cardTitle">
+								<h1>Evening Habits - Hit Workouts</h1>
 							</div>
 
-						</div>
-					</div>
-						</div>
+							<div class="rightContent">
+								<p>Joe Wicks is an onlin Joe's philosophy to health and fin energy and transf </p>
+								<li>Eat Porrige</li>
+								<li>Press ups</li>
+								<p>Joe Wicks is an onlur macronutrients to ensure your body burns fat, increases in energy and transf </p>
+							</div>
+
+							<div class="leftContent">
+
+								<img src="/Habiio/wp-content/uploads/2016/05/FILE-20151106-1636YY52HHX64KAN.jpg" alt="Arianna Huffington_Transparent" />
+
+							</div>
+	</div>
+</div>
+</div>
+</div>
+
+
+
+		</div>
+		</div>
 
 						<!-- <div class="eveningBox">
 							<div class="habitCard">
@@ -119,22 +175,6 @@ Joe's philosophy to health and fin energy and transf </p>
 						</div>
 							</div>
 						</div> -->
-					</div>
-					</div>
-
-
-						<div class="habitArticle">
-
-
-
-
-
-
-
-				</div>
-<!-- End of habit section -->
-
-
 
 					<?php
 							/*
