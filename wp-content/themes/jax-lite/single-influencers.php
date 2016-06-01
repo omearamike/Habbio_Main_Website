@@ -44,7 +44,7 @@
 
 							<div class="profileCaption">
 
-								 <h2>I'm a man on a mission to rescue people from the awful dieting industry. I am sick and tired of people struggling on low calorie diets and meal replacement shakes.</h2>
+								 <h2> <?php returnProfile("profileCaption", get_the_content()); ?> </h2>
 
 							</div>
 
@@ -61,20 +61,15 @@
 								<div class="innerCard">
 											<div class="innerContainer">
 													<div class="cardTitle">
-														<h1>Morning Habits - Press ups</h1>
+														<h1> <?php returnProfile("morningHeader", get_the_content()); ?> </h1>
 													</div>
 
 													<div class="leftContent">
-														<p>Joe Wicks is an onlin Joe's philosophy to health and fin energy and transf </p>
-														<li>Eat Porrige</li>
-														<li>Press ups</li>
-														<p>Joe Wicks is an onlur macronutrients to ensure your body burns fat, increases in energy and transf </p>
+															<?php returnProfile("morningContent", get_the_content()); ?>
 													</div>
 
 													<div class="rightContent">
-
-														<!-- <img src="/Habiio/wp-content/uploads/2016/05/Joe-Wicks-The-Body-Coach-Skipping1200x976-790x500.jpg" alt="Arianna Huffington_Transparent" /> -->
-														<iframe width="560" height="350px" src="https://www.youtube.com/embed/WFkCJjJcYuY" frameborder="0" allowfullscreen></iframe>
+														<?php returnProfile("morningImage", get_the_content()); ?>
 													</div>
 							</div>
 					</div>
@@ -88,20 +83,15 @@
 					<div class="innerCard">
 								<div class="innerContainer">
 										<div class="cardTitle">
-											<h1>Afternooon Habits - Hit Workouts</h1>
+											<h1> <?php returnProfile("afternoonHeader", get_the_content()); ?> </h1>
 										</div>
 
 										<div class="rightContent">
-											<p>Joe Wicks is an onlin Joe's philosophy to health and fin energy and transf </p>
-											<li>Eat Porrige</li>
-											<li>Press ups</li>
-											<p>Joe Wicks is an onlur macronutrients to ensure your body burns fat, increases in energy and transf </p>
+														<?php returnProfile("afternoonContent", get_the_content()); ?>
 										</div>
 
 										<div class="leftContent">
-
-											<img src="/Habiio/wp-content/uploads/2016/05/Joe-Wicks-The-Body-Coach-Skipping1200x976-790x500.jpg" alt="Arianna Huffington_Transparent" />
-
+												<?php returnProfile("afternoonImage", get_the_content()); ?>
 										</div>
 				</div>
 		</div>
@@ -115,20 +105,15 @@
 		<div class="innerCard">
 					<div class="innerContainer">
 							<div class="cardTitle">
-								<h1>Evening Habits - Hit Workouts</h1>
-							</div>
-
-							<div class="rightContent">
-								<p>Joe Wicks is an onlin Joe's philosophy to health and fin energy and transf </p>
-								<li>Eat Porrige</li>
-								<li>Press ups</li>
-								<p>Joe Wicks is an onlur macronutrients to ensure your body burns fat, increases in energy and transf </p>
+								<h1><?php returnProfile("eveningHeader", get_the_content()); ?></h1>
 							</div>
 
 							<div class="leftContent">
+								<?php returnProfile("eveningContent", get_the_content()); ?>
+							</div>
 
-								<img src="/Habiio/wp-content/uploads/2016/05/FILE-20151106-1636YY52HHX64KAN.jpg" alt="Arianna Huffington_Transparent" />
-
+							<div class="rightContent">
+									<?php returnProfile("eveningImage", get_the_content()); ?>
 							</div>
 	</div>
 </div>

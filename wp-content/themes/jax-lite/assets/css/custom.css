@@ -212,7 +212,7 @@
 .cardTitle {
   width: 100%;
   position: inherit;
-  border-bottom: 2px solid #AFAFAF;
+  border-bottom: 2px solid rgba(175, 175, 175, 0.15);
 }
 
 .cardTitle h1 {
@@ -232,7 +232,7 @@
   z-index: 1011;
   bottom: 0px;
   padding: 20px;
-  border-right: 2px solid #AFAFAF;
+  /*border-right: 2px solid rgba(175, 175, 175, 0.15);*/
 }
 
 .rightContent {
@@ -264,14 +264,14 @@ padding: 20px;
       box-shadow: 0 0 4px rgba(0,0,0,0.15);
       padding: 20px;
       background-color: rgb(250, 250, 249);
-      border-radius: 15px
+      border-radius: 15px;
+      position: relative;
 }
 
 .innerContainer {
-  /*position: fixed;
-  bottom: 0px;*/
-  /*background-color: blue;*/
-padding: inherit;
+  padding: inherit;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .eveningTitleBox h2 {
@@ -476,7 +476,7 @@ padding: inherit;
    .mainFooter .footerContent .topFooter {
      width: 100%;
      background-color: rgba(97, 97, 97, 0.83);
-     height: 70px;
+     height: 100%;
      position: relative;
    }
 
@@ -526,6 +526,9 @@ padding: inherit;
      left:0;
      right: 0;
      top: 0;
+     top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
      /*bottom: 0;*/
 
    }

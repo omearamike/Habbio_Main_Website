@@ -27,6 +27,155 @@ if (!function_exists('jaxlite_setting')) {
 }
 
 /*-----------------------------------------------------------------------------------*/
+/* Funcion to split blog Posts in to sections*/
+/*-----------------------------------------------------------------------------------*/
+
+function multiexplode ($delimiters,$string) {
+
+    $ready = str_replace($delimiters, $delimiters[0], $string);
+    $launch = explode($delimiters[0], $ready);
+    return  $launch;
+}
+
+// Params
+// $Post is what section of the content should be returned
+// $Content is the raw blog content
+function returnProfile($post, $content)  {
+
+// Add the raw content
+//  $content = 'PROFILEIMAGEXYZ
+//
+// <img src="http://localhost:8888/Habiio/wp-content/uploads/2016/05/joeWicks_ProfileImage.png" alt="Arianna Huffington_Transparent" />
+//
+//
+//
+// PROFILECAPTIONXZY
+//
+// Swedish native Rachel Brathen is a New York Times best-selling author, motivational speaker and international yoga teacher residing in Aruba. After graduating school in Stockholm she traveled to Costa Rica and it was here that she found the joy of incorporating yoga
+//
+//
+// MORNINGHEADERXYZ
+//
+//       <li>Yogo</li>
+//       <li>Yoga</li>
+//       <li>Breakfast</li>
+//       <li>Run</li>
+//
+// MORNINGCONTENTXYZ
+//
+//       <li>Sleep</li>
+//       <li>Evening</li>
+//       <li>read</li>
+//       <li>iifsif</li>
+//
+// MORNINGIMAGEXYZ
+// THIS IS THE image
+//
+// AFTERNOONHEADERXYZ
+//
+// AFTERNOONCONTENTXYZ
+//
+// AFTERNOONIMAGEXYZ
+//
+// EVENINGHEADERXYZ
+//
+// THIS IS THE EVENING HEAEDER
+//
+// EVENINGCONTENTXYZ
+//
+// EVENINGIMAGEXYZ
+// ';
+
+// $section[1] =>  Profile Image
+// $section[2] =>  Profile Caption
+// $section[3] =>  Morning Header
+// $section[4] =>  Morning Content
+// $section[5] =>  Morning Image
+// $section[6] =>  Afternoon Header
+// $section[7] =>  Afternoon Content
+// $section[8] =>  Afternoon Image
+// $section[9] =>  Evening Header
+// $section[10] =>  Evening Content
+// $section[11] =>  Evening Image
+// perform the split action
+$sectionArray = multiexplode(array ("PROFILEIMAGEXYZ", "PROFILECAPTIONXZY",  "MORNINGHEADERXYZ", "MORNINGCONTENTXYZ", "MORNINGIMAGEXYZ", "AFTERNOONHEADERXYZ", "AFTERNOONCONTENTXYZ", "AFTERNOONIMAGEXYZ", "EVENINGHEADERXYZ", "EVENINGCONTENTXYZ", "EVENINGIMAGEXYZ") , $content );
+
+if ($post == "profileImage") {
+
+  echo $sectionArray[1];
+
+}
+
+elseif ($post == "profileCaption") {
+
+  echo $sectionArray[2];
+
+}
+
+elseif ($post == "morningHeader") {
+
+  echo $sectionArray[3];
+
+}
+
+elseif ($post == "morningContent") {
+
+  echo $sectionArray[4];
+
+}
+
+elseif ($post == "morningImage") {
+
+  echo $sectionArray[5];
+
+}
+
+elseif ($post == "afternoonHeader") {
+
+  echo $sectionArray[6];
+
+}
+
+elseif ($post == "afternoonContent") {
+
+  echo $sectionArray[7];
+
+}
+
+elseif ($post == "afternoonImage") {
+
+  echo $sectionArray[8];
+
+}
+
+elseif ($post == "eveningHeader") {
+
+  echo $sectionArray[9];
+
+}
+
+elseif ($post == "eveningContent") {
+
+  echo $sectionArray[10];
+
+}
+
+elseif ($post == "eveningImage") {
+
+  echo $sectionArray[11];
+
+}
+
+
+
+ // $content = "1 This is the PROFILEIMAGEXYZ first section 2 this END is the big second section 3 END This is the third section";
+
+ }
+
+// returnProfile("morningList");
+
+
+/*-----------------------------------------------------------------------------------*/
 /* Single Blog Post formating based on Category */
 /*-----------------------------------------------------------------------------------*/
 
